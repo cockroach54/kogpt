@@ -1,0 +1,76 @@
+@startmindmap
++ LLM
+-- 엔지니어링
+--- 경량화
+---- 양자화 (2bit, 4bit ...)
+---- ggml (c++)
+--- 한국어 버전
+---- 학습 데이터
+--- Chat 버전
+---- 프롬프트 후처리
+---- 챗봇 프론트
+--- 서비스
+---- 모델 서빙
+---- 로드 밸런싱
+---- 메세지 큐
+--- 분산학습(multi-gpu)
+---- 3D parallelism
+----- data parallelism
+----- model parallelism
+----- pipeline parallelism
+---- ZeRO (Deepspeed)
+--- 이슈
+---- 메모리
+---- 속도
+
+-- 모델
+--- chinchilla (scaling raws)
+--- gpt3
+---- chatgpt (gpt3.5, davinchi-003)
+--- gpt4 (멀티모달)
+--- gpt-j (오프소스)
+--- polyglot-ko (Eluther)
+---- 5.8B
+---- 12.8B
+--- kogpt 6B (카카오)
+--- hyperclova-X (네이버)
+--- llama (meta)
+---- chatllama
+---- alpaca (stanford)
+----- ko-alpaca
+--- vicuna
+---- stableVicuna
+
+++ 비즈니스
++++ 타겟
+++++ 증권사
+++++ 카드사
++++ 활용법
+++++ 캠페인 메세지 생성
+++++ 광고 카피라이팅 생성
+++++ 고객군 필터 sql 생성
+++++ 블로그 글 생성
+++++ 아이디에이션
+++++ 문서내 질문
++++ 융합
+++++ 이미지 생성
++++++ 카드뉴스 이미지
++++++ 오퍼 메시지 이미지
+++++ 비디오 생성
+++++ TTS
+++++ SST
+++++ search API
+++++ 3rd party API
+
+
+++ 이론
++++ Instruct
+++++ Self-Instruct
+++++ RLHF
++++++ PPO
++++ PEFT
+++++ RoLa
+++++ P-tuning
+++++ prompt tuning
+
+@endmindmap
