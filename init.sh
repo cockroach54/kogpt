@@ -5,8 +5,9 @@ apt -y install vim htop tmux net-tools ninja-build build-essential libxml2 libai
 
 # 프로젝트 코드 받아오기
 # git clone https://github.com/cockroach54/kogpt.git
-cd kogpt
+# cd kogpt
 pip install -r requirements.txt
+pip install ./ref/KoChatGPT/colossalai_ChatGPT_230319
 
 # 쉘스크립트 모드 변경
 chmod 775 *.sh
@@ -17,14 +18,14 @@ python kogpt.py
 # # polyglot 모델 받기
 # python kopoly.py
 
-# 
+# misc
 chmod 775 *.sh
 alias gitlog='git log --decorate --oneline --graph --all'
 echo "alias gitlog='git log --decorate --oneline --graph --all'" >> ~/.bashrc
 
 # for polyglot 12.8b trianing
 chmod 775 ./train_v1.1b/*.sh
-cp ./KoAlpaca_v1.1.jsonl ./train_v1.1b/data/KoAlpaca_v1.1.json
+cp ./data/KoAlpaca_v1.1.jsonl ./train_v1.1b/data/KoAlpaca_v1.1.json
 
 # # 공개키 등록
 # # 안해도 되네??

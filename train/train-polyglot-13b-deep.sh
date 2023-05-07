@@ -13,6 +13,7 @@ torchrun --nproc_per_node=4 --master_port=34321 train-polyglot-13b-deep.py \
     --weight_decay 0. \
     --warmup_ratio 0.03 \
     --lr_scheduler_type "cosine" \
+    --report_to "none" \
     --model_max_length 1024 \
     --deepspeed=ds_zero3-nooffload.json \
     --do_train \
