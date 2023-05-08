@@ -135,3 +135,4 @@ dmypy.json
 dev
 data/shareGPT-ko
 data/obzen
+data/rlhf/check.json
