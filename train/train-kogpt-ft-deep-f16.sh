@@ -12,16 +12,23 @@ torchrun --nproc_per_node=2 --master_port=34321 train-kogpt-ft.py \
     --save_total_limit 1 \
     --learning_rate 2e-5 \
     --weight_decay 0. \
-    --warmup_ratio 0.03 \
+    --warmup_ratio 0.005 \
     --lr_scheduler_type "cosine" \
     --model_max_length 512 \
-    --deepspeed=ds_zero2-f16.json \
+    --deepspeed=ds2.json \
     --do_train \
     --report_to "none" \
-    --logging_steps 1
+    --logging_steps 1 
 
     # --use_mps_device "true" \
-    # --model_name='EleutherAI/polyglot-ko-1.3b' \
+    # --model_name='EleutherAI/polyglot-ko-1.3b' \ 
+
+#     --deepspeed=ds_zero3-nooffload.json \
+
+#     --learning_rate 2e-5 \
+#     --weight_decay 0. \
+#     --warmup_ratio 0.005 \
+#     --lr_scheduler_type "cosine" \
 
 
 
