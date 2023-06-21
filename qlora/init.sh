@@ -14,7 +14,7 @@ pip install -r requirements-qlora.txt
 # python kogpt.py
 
 # polyglot 모델 받기
-python ../kopoly.py
+python ../kopoly6b.py
 
 # misc
 chmod 775 *.sh
