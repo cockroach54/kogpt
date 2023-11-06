@@ -7,11 +7,13 @@ from time import time
 DEVICE = "cuda"
 
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/polyglot-ko-12.8b")
-model = AutoModelForCausalLM.from_pretrained("EleutherAI/polyglot-ko-12.8b",
-                                             pad_token_id=tokenizer.pad_token_id,
-                                            eos_token_id=tokenizer.eos_token_id,
-                                            low_cpu_mem_usage=True,
-                                            torch_dtype=torch.float16).to(DEVICE)
+model = AutoModelForCausalLM.from_pretrained(
+    "EleutherAI/polyglot-ko-12.8b",
+    pad_token_id=tokenizer.pad_token_id,
+    eos_token_id=tokenizer.eos_token_id,
+    low_cpu_mem_usage=True,
+    torch_dtype=torch.float16,
+).to(DEVICE)
 
 # tokenizer = AutoTokenizer.from_pretrained("beomi/KoAlpaca-Polyglot-12.8B")
 # model = AutoModelForCausalLM.from_pretrained("beomi/KoAlpaca-Polyglot-12.8B",
@@ -40,7 +42,7 @@ prompt = "원숭이 엉덩이는 빨개. 빨가면 사과."
 # 2.정답: 긍정
 
 # 3.입력: 사이몬페그의 익살스런 연기가 돋보였던 영화!스파이더맨에서 늙어보이기만 했던 커스틴 던스트가 너무나도 이뻐보였다
-# 3.정답: 
+# 3.정답:
 # """
 
 prompt = "코스닥이 얼마까지 오를까?"

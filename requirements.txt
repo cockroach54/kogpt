@@ -12,6 +12,6 @@ accelerate
 peft
 matplotlib
 datetime
-deepspeed
+# deepspeed  # 직접 소스 빌드
 datasets
 evaluate

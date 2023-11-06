@@ -1,7 +1,7 @@
 # 클라우드 인스턴스 올린 후 초기 셋팅
 
 # 시스템 유틸 설치
-apt -y install vim htop tmux net-tools ninja-build build-essential libxml2 libaio-dev
+apt -y install vim htop tmux at net-tools ninja-build build-essential libxml2 libaio-dev
 
 # 프로젝트 코드 받아오기
 # git clone https://github.com/cockroach54/kogpt.git
